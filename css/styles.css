@@ -3,15 +3,15 @@
     --second-text-color: #E7E9FC;
     --first-title-color: #FFFFFF;
     --second-title-color: #2E2F42;
-    --first-btn-color: #FFFFFF;
+    --btn-color: #FFFFFF;
     --first-btn-active-color: #404BBF;
+    --second-btn-background: #F4F4FD;
     --first-logo-color:#4D5AE5;
     --second-logo-color: #2E2F42;
     --active-color: #4D5AE5;
     --menu-color: #2E2F42;
     --menu-hover-color: #434455;
-    --top-background: #FFFFFF;
-    --body-background: #E5E5E5;
+    --body-background: #FFFFFF;
     --hero-background: #2E2F42;
     --team-background-color: #F4F4FD;
     --card-background: #FFFFFF;
@@ -31,10 +31,9 @@ body {
     text-decoration: none;
 }
 /* ------------- TOP-LINE ----------------*/
-/* .page {} */
+/* .first-page {} */
 
 .top {
-    background: var(--top-background);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .logo {
@@ -63,15 +62,21 @@ body {
 .menu-item:focus {
 color: var(--active-color);
 }
+
+.current {
+    color: var(--active-color);
+}
 /* .contact {}
 .contact-item {} */
 
-.mail {
+.connection {
     font-size: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
 }
+/* .mail {} */
+
 .mail:hover,
 .mail:focus {
   color: var(--active-color);  
@@ -79,10 +84,6 @@ color: var(--active-color);
 
 .phone {
     font-weight: 500;
-    font-size: inherit;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate-color);
 }
 .phone:hover,
 .phone:focus {
@@ -103,19 +104,21 @@ background: var(--hero-background);
     color: var(--first-title-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.first-btn {
+.btn {
     font-family: inherit;
     font-weight: 500;
-    font-size: inherit;
-    line-height: 1.19;
+    font-size: 16px;
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    color: var(--first-btn-color);
+    cursor: pointer;
+}
+.first-btn {
+    line-height: 1.19;
     background: var(--active-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor: pointer;
+    color: var(--btn-color);
 }
 .first-btn:hover,
 .first-btn:focus {
@@ -157,7 +160,8 @@ background: var(--hero-background);
     color: var(--second-title-color);
 }
 
-.adv-text {
+.adv-text,
+.gallery-text {
     font-size: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -200,12 +204,13 @@ background: var(--hero-background);
     letter-spacing: 0.02em;
     color: var(--second-title-color);
 }
-.card-title {
+.card-title,
+.galery-text {
     font-size: inherit;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--first-text-color)
+    color: var(--first-text-color);
 }
 
 /* .footer {} */
@@ -222,3 +227,59 @@ line-height: 1.33;
     letter-spacing: 0.02em;
     color: --second-text-color;
 }
+/*-------------- PAGE 2 PORTFOLIO ----------------- */
+/* ----------------- TOP-LINE ----------------------*/
+/* .second-page {}
+
+.top {}
+
+.logo {}
+
+.link {}
+
+.studio {}
+
+.navigation {}
+
+.menu {}
+
+.list {}
+
+.menu-item {}
+
+.contact {}
+
+.contact-item {}
+
+.mail {}
+
+.phone {} */
+
+/* -------------------- BUTTONS -------------------- */
+
+/* .visually-hidden {} */
+
+.second-btn {
+    line-height: 1.5;
+    background: var(--second-btn-background);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    color: var(--active-color);
+}
+.second-btn:hover,
+.second-btn:focus {
+    background: var(--active-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--btn-color);
+}
+
+/* .gallery {} */
+
+.gallery-img {
+    background: var(--card-background);
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+
