@@ -16,12 +16,13 @@
     --team-background-color: #F4F4FD;
     --card-background: #FFFFFF;
     --studio-footer-color: #F4F4FD;
+    --slate-color: #434455;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    background: var(--body-background);
+    background-color: var(--body-background);
     color: var(--slate-color);
 }
 .list {
@@ -41,7 +42,6 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -50,10 +50,11 @@ body {
 .studio {
         color: var(--second-logo-color);
 }
-/* .navigation {} */
-.menu {
+/* .navigation {}
+/* .menu {}  */
+
+.menu-item {
     font-weight: 500;
-    font-size: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--menu-color);
@@ -62,7 +63,6 @@ body {
 .menu-item:focus {
 color: var(--active-color);
 }
-
 .current {
     color: var(--active-color);
 }
@@ -70,7 +70,6 @@ color: var(--active-color);
 .contact-item {} */
 
 .connection {
-    font-size: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
@@ -93,7 +92,7 @@ color: var(--active-color);
 /* .hero {} */
 
 .ground {
-background: var(--hero-background);
+background-color: var(--hero-background);
 }
 .main-title {
     font-weight: 500;
@@ -102,13 +101,11 @@ background: var(--hero-background);
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--first-title-color);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    display: flex;
     align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
@@ -122,12 +119,12 @@ background: var(--hero-background);
 }
 .first-btn:hover,
 .first-btn:focus {
-    background: var(--active-color);
+    background-color: var(--first-btn-active-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 4px;
 }
 .first-btn:active {
-    background: var(--first-btn-active-color);
+    background-color: var(--first-btn-active-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -160,7 +157,6 @@ background: var(--hero-background);
 }
 
 .adv-text {
-    font-size: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--first-text-color);
@@ -177,20 +173,15 @@ background: var(--hero-background);
     text-transform: capitalize;
     color: var(--second-title-color);
 }
-.picture {
-    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
-    background-blend-mode: soft-light, normal;
-    border: 1px solid #E7E9FC;
-}
 
 /* ------------------OUR TEAM--------------------- */
 
 .team {
-    background: var(--team-background-color);
+    background-color: var(--team-background-color);
 }
 
 .team-card {
-    background: var(--card-background);
+    background-color: var(--card-background);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
@@ -203,7 +194,6 @@ background: var(--hero-background);
     color: var(--second-title-color);
 }
 .card-title {
-    font-size: inherit;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
@@ -219,7 +209,6 @@ line-height: 1.33;
     color: var(--studio-footer-color);
 }
 .text-footer {
-    font-size: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
@@ -265,21 +254,18 @@ line-height: 1.33;
 }
 .second-btn:hover,
 .second-btn:focus {
-    background: var(--active-color);
+    background-color: var(--active-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
     color: var(--btn-color);
 }
 
 /* .gallery {} */
 
 .gallery-img {
-    background: var(--card-background);
+    background-color: var(--card-background);
     border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .gallery-text {
-    font-size: inherit;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
